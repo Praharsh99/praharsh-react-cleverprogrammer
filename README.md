@@ -36,7 +36,7 @@ const CleverProgrammerComponent {
 
 ## Demo
 
-A quick demo can be found here [demo 🔥](https://)
+A quick demo can be found here [demo 🔥](https://praharsh99.github.io/praharsh-react-cleverprogrammer/)
 
 ## Components
 
