@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 import styles from './navbar.styles.css'
 
-const Navbar = ({ imgSrc, component, children }) => {
+const Navbar = ({ imgSrc, sticky, component, children }) => {
   const getWhichCompToRender = (imgLink, component) => {
     if (imgLink && isImageUrl(imgLink)) {
       return <img src={imgSrc} alt='Brand' />
@@ -16,8 +16,13 @@ const Navbar = ({ imgSrc, component, children }) => {
     }
   }
 
+  const style = {
+    position: 'sticky',
+    top: '0'
+  }
+
   return (
-    <div className={styles.navbar}>
+    <div style={sticky ? style : null} className={styles.navbar}>
       <div className={styles.brandSection}>
         {getWhichCompToRender(imgSrc, component) || component}
       </div>

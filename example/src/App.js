@@ -6,10 +6,10 @@ import '@praharsh/react-cleverprogrammer/dist/index.css'
 const App = () => {
   return (
     <>
-      <Navbar imgSrc='https://i.ibb.co/RNkb01p/download.jpg'>
-        <l1>About</l1>
-        <l1>Resources</l1>
-        <l1>Careers</l1>
+      <Navbar sticky imgSrc='https://i.ibb.co/RNkb01p/download.jpg'>
+        <li>About</li>
+        <li>Resources</li>
+        <li>Careers</li>
         <a href='https://www.cleverprogrammer.com/'>
           <Avatar src='https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png' />
         </a>

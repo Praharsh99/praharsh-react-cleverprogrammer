@@ -4,7 +4,6 @@ import styles from './input.styles.css'
 
 const Input = ({
   variant,
-  sticky,
   label = 'Enter Here',
   type = 'text',
   ...otherProps
@@ -16,13 +15,8 @@ const Input = ({
 
   type = type === 'email' || type === 'password' ? type : 'text'
 
-  const style = {
-    position: 'sticky',
-    top: '0'
-  }
-
   return (
-    <div style={sticky ? style : null} className={styles.inputContainer}>
+    <div className={styles.inputContainer}>
       <input
         className={`${styles.inputField} ${styles['inputField--' + variant]}`}
         type={type}
