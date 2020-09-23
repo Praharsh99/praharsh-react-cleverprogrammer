@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  max-height: 150px;
+  z-index: 99999999;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.brandSection {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.brandSection > img {
+  object-fit: contain;
+  height: 52px;
+}
+
+.linksSection {
+  min-width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  align-items: center;
+  padding: 10px 20px;
+}

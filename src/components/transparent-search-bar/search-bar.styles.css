@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.searchBarContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* Invert background */
+
+.searchBarContainer--invert {
+  background: #333 !important;
+}
+
+/* invert end */
+
+.searchIcon {
+  border: none;
+  outline: none;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.searchIcon > img {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+}
+
+.searchBar {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  height: 100%;
+  padding: 24px 15px;
+  padding-left: 0;
+  font-size: 17px;
+}
+
+.searchBar::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.searchBar:focus::placeholder {
+  color: #3a3c4c;
+}
+
+.searchBar--invert {
+  color: #fff !important;
+}
+
+/* Inverted styles for search bar*/
+.searchBar--invert:focus {
+  color: #fff !important;
+}
+
+.searchBar--invert:focus::placeholder {
+  color: #fff !important;
+}
+
+/* invert end */
+
+.hiddenBackground {
+  position: absolute;
+  pointer-events: none;
+  background: transparent;
+  transition: all 0.4s ease;
+  z-index: -11;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.searchBar:focus + .hiddenBackground {
+  background: rgb(255, 255, 255);
+}
