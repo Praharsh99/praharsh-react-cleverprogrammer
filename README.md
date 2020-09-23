@@ -73,6 +73,14 @@ or
 <Navbar component={<MyLogoComponent />} />
 ```
 
+###### `sticky`
+
+The navigation bar can be sticky if you pass the **sticky** prop
+
+```jsx
+<Navbar sticky />
+```
+
 ###### `children`
 
 To have some links in the navigation bar you should pass those elements as children, i.e., wrap them inside **Navbar** component
