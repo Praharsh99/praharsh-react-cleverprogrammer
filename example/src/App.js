@@ -6,25 +6,27 @@ import '@praharsh/react-cleverprogrammer/dist/index.css'
 const App = () => {
   return (
     <>
-      <Navbar component={<h1>Clever Programmer</h1>}>
+      <Navbar imgSrc='https://i.ibb.co/RNkb01p/download.jpg'>
         <l1>About</l1>
         <l1>Resources</l1>
         <l1>Careers</l1>
-        <l1>Signout</l1>
-        <a href='https://github.com/'>Hello</a>
+        <a href='https://www.cleverprogrammer.com/'>
+          <Avatar src='https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png' />
+        </a>
       </Navbar>
-      <br />
-      <br />
-      <Avatar />
-      <br />
-      <br />
-      <Button />
-      <br />
-      <br />
-      <br />
-      <Input />
-      <br />
-      <br />
+
+      <div className='container'>
+        <Input label='This is the default input' />
+        <br />
+        <br />
+        <Input label='Variant - rounded input' variant='rounded' />
+        <br />
+        <br />
+        <Input label='Variant - bordered' variant='bordered' />
+        <br />
+        <br />
+        <Button>This is a button</Button>
+      </div>
     </>
   )
 }

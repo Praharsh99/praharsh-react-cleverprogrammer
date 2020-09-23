@@ -18,9 +18,7 @@ const Input = ({
   return (
     <div className={styles.inputContainer}>
       <input
-        className={`${styles.inputField} ${
-          variant === 'bordered' ? styles['inputField--' + 'bordered'] : ''
-        }`}
+        className={`${styles.inputField} ${styles['inputField--' + variant]}`}
         type={type}
         {...otherProps}
       />

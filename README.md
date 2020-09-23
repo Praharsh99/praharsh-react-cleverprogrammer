@@ -14,7 +14,7 @@ npm install --save @praharsh/react-cleverprogrammer
 yarn add @praharsh/react-cleverprogrammer
 ```
 
-## SIMPLE EXAMPLE
+## Simple Example
 
 Here is a quick example to get you started, **it's all you need**
 :
@@ -33,6 +33,10 @@ const CleverProgrammerComponent {
  )
 }
 ```
+
+## Demo
+
+A quick demo can be found here [demo 🔥](https://)
 
 ## Components
 
