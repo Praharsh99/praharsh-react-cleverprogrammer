@@ -46,6 +46,10 @@ This package has a few components, other will be added in the future 🤩
 - Avatar
 - Button
 - Input
+- Modal
+- Card
+- Loader
+- Alert
 
 ### USAGE
 
@@ -119,7 +123,7 @@ By, default the type for the button is `button`. You can change this by passing 
 > You can even pass the event listeners to the button component. For example:
 
 ```jsx
-<Button onClick={doSomething}>{counter}</Button>
+<Button onClick={doSomething...}>{counter}</Button>
 ```
 
 #### `<Avatar />`
@@ -143,7 +147,7 @@ This is the only this component needs, which will be an image link. If this is n
 This component only works for input types like `text, email, and password`. By default the type is `text`
 
 ```jsx
-<Input type='text || email || password' />
+<Input type='text/email/password' />
 ```
 
 ###### `variant`
@@ -184,6 +188,112 @@ If you want to have some text inside the input before user types (like placehold
 ```
 
 > You can also pass the `value` `onChange` `required` props if needed
+
+#### `<Modal>`
+
+##### Props
+
+###### `isOpen`
+
+This is a required prop, which controls the modal state
+if **isOpen -> `true (or) any other truthy value` **, the modal appears on the screen
+if **isOpen -> `false (or) any other falsy value (like NaN, '', undefined, null)` **, the modal will not render
+
+```jsx
+<Modal isOpen={true / false} />
+```
+
+###### `children`
+
+The content that should be displayed in the modal
+
+```jsx
+<Modal>
+  <LoginCardComponent />
+  <Button type='submit'>Submit</Button>
+  ....
+</Modal>
+```
+
+###### `invert`
+
+By default the background color of the modal is transparent black if you need a white transparent background pas this prop
+
+```jsx
+<Modal invert>...children</Modal>
+```
+
+#### `<Card>`
+
+##### Props
+
+###### `children`
+
+The contents that need to be displayed inside the card
+
+```jsx
+<Card>
+  <Input type='text' label='Username' />
+  <Input type='password' label='Password' />
+  <br />
+
+  <Button type='submit'>Login</Button>
+</Card>
+```
+
+###### `invert`
+
+Good for dark themes! use this prop to change the background color to dark color
+
+```jsx
+<Card invert>contents inside...</Card>
+```
+
+#### `<Loader />`
+
+##### Props
+
+> All these props are optional
+
+- `height` -> The height and width of the complete loader (default `85px`)
+- `loaderColor` -> The loader color (default #fd9d00)
+- `loaderBackgroundColor` -> The loader background color (default #000)
+
+```jsx
+<Loader height='100px' loaderColor='#fff' loaderBackgroundColor='#000' />
+```
+
+#### `<Alert>`
+
+##### Props
+
+###### `children`
+
+Again! This will determine the content which should be displayed inside the alert
+
+```jsx
+<Alert>
+  An alert message for you 🚀
+</Alert>
+
+or
+
+<Alert>
+  <h1>You can pass components too</h1>
+  <Button>Click Me!</Button>
+</Alert>
+```
+
+###### `type`
+
+The **type** prop determines what type of alert you want to pop. Each type has its own color theme
+Avaliable types are:
+
+- Primary (default)
+- Success
+- Error
+- Warning
+- Secondary
 
 ## License
 

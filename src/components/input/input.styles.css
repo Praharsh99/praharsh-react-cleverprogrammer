@@ -34,12 +34,14 @@
   border-bottom: 3px solid lightgrey;
 }
 
-.inputField--bordered:focus {
+.inputField--bordered:focus,
+.inputField--bordered:not(:placeholder-shown) {
   border-bottom-color: #fe9d00;
 }
 
 .inputField--rounded {
   border-radius: 24px !important;
+  padding-left: 15px !important;
 }
 
 .inputLabel {
@@ -67,6 +69,7 @@
   letter-spacing: 2.5px;
 }
 
-.inputField--bordered:focus + .inputLabel {
+.inputField--bordered:focus + .inputLabel,
+.inputField--bordered:not(:placeholder-shown) + .inputLabel {
   color: #fe9d00 !important;
 }

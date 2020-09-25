@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 .container {
@@ -22,4 +23,10 @@ body {
 .loader-container {
   margin: 0;
   padding: 20px;
+}
+
+.alert--btn {
+  position: absolute;
+  right: 40px;
+  top: 50%;
 }

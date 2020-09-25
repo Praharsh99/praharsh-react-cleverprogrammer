@@ -4,7 +4,11 @@ import styles from './button.styles.css'
 
 const Button = ({ children, ...otherProps }) => {
   return (
-    <button className={styles.button} {...otherProps}>
+    <button
+      type='button'
+      {...otherProps}
+      className={`${styles.button} ${otherProps.className}`}
+    >
       {children || 'Clever Programmer'}
     </button>
   )

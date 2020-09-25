@@ -7,5 +7,6 @@ import Navbar from './components/navbar/navbar.component'
 import Card from './components/card/card.component'
 import Loader from './components/loader/loader.component'
 import Modal from './components/modal/modal.component'
+import Alert from './components/alert/alert.component'
 
-export { Avatar, Button, Input, Navbar, Card, Loader, Modal }
+export { Avatar, Button, Input, Navbar, Card, Loader, Modal, Alert }

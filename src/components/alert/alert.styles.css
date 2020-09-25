@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  z-index: 1000001;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  animation: alertAnimation 0.4s linear;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.alert--success {
+  background-color: #d0f9e1;
+  color: #1bda18;
+}
+
+.alert--error {
+  background-color: #fbd0dc;
+  color: #ee0d51;
+}
+
+.alert--primary {
+  background-color: #d3f2ff;
+  color: #099df3;
+}
+
+.alert--warning {
+  background-color: #fff9cf;
+  color: #ecbc10;
+}
+
+.alert--secondary {
+  background-color: #eaeaea;
+  color: #000;
+}
+
+@keyframes alertAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20%) rotateX(-90deg);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0px) rotateX(0);
+  }
+}

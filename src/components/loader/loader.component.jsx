@@ -2,16 +2,11 @@ import React from 'react'
 
 import styles from './loader.style.css'
 
-const Loader = ({
-  loaderWidth,
-  loaderBackgroundWidth,
-  loaderColor,
-  loaderBackgroundColor
-}) => {
+const Loader = ({ height, loaderColor, loaderBackgroundColor }) => {
   const style = {
-    borderWidth: loaderBackgroundWidth || '6px',
-    borderTopWidth: loaderWidth || '6px',
-    borderColor: loaderBackgroundColor || '#e9e9e9',
+    height: height || '80px',
+    width: height || '80px',
+    borderColor: loaderBackgroundColor || '#000',
     borderTopColor: loaderColor || '#fd9d00'
   }
 

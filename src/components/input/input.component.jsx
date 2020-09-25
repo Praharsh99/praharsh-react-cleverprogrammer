@@ -18,9 +18,9 @@ const Input = ({
   return (
     <div className={styles.inputContainer}>
       <input
-        className={`${styles.inputField} ${styles['inputField--' + variant]}`}
         type={type}
         {...otherProps}
+        className={`${styles.inputField} ${styles['inputField--' + variant]}`}
       />
       <label className={styles.inputLabel}>{label}</label>
     </div>
