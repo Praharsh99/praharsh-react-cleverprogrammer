@@ -14,10 +14,17 @@
   width: 100vw;
   height: 80px;
   max-height: 150px;
-  z-index: 99999999;
+  z-index: 999999;
   background: #fff;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar--invert {
+  color: #fff;
+  background: #333;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
 .brandSection {

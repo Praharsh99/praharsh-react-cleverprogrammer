@@ -18,3 +18,8 @@ body {
   display: grid;
   place-items: center;
 }
+
+.loader-container {
+  margin: 0;
+  padding: 20px;
+}

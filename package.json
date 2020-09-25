@@ -54,5 +54,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "is-image-url": "^1.1.8"
+  }
 }
